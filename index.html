@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Center text and container */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    #text {
+      text-align: center;
+      font-size: 1.2em;
+      white-space: pre-wrap;
+      margin-bottom: 50px;
+      max-width: 90%;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      background-color: #ff7f50;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="text"></div>
+
+  <div class="buttons">
+    <button id="musicBtn">Play Music 🎵</button>
+    <button id="nextBtn" style="display:none;">Next ➜</button>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="Birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+  </html>
